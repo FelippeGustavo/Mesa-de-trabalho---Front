@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mesa de trabalho</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet"> 
+
 </head>
 <style type="text/css">
 
@@ -13,15 +17,56 @@
     */
     .lista {
         display: flex;
-    }
+        list-style:none;
+        background-color: white;
+        justify-content:space-around;
+        flex-direction: column;
+        font-family: 'PT Sans', sans-serif;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+       
 
+        
+    }
+.lista  p{
+ text-align: left;
+}
+.lista  h4{
+ text-align: left;
+ font-weight: bold;
+ color: rgba(27, 27, 26, 0.871);
+}
     /*
         2. Implemente o cartão de cada item conforme a imagem referência.
     */
     .cartao {
         display: flex;
+        gap: 25px;
+        
     }
 
+    body{
+        background-color: rgb(84, 171, 233);
+    }
+
+    .cartao__imagem{
+        border-radius: 65%;
+
+       
+    }
+    .list-item{
+        border-bottom: 1px solid rgb(108, 106, 106, 0.5);
+        text-align: center;
+        margin-right: 10px;
+        margin-left: -40px;
+        
+    }
+    .cartao__endereco{
+        color: rgba(100, 100, 97, 0.53);
+    }
+
+   
 </style>
 <body>
 
@@ -43,7 +88,7 @@
                 </figcaption>
             </figure>
         </li>
-
+        <hr>
         <li class="list-item">
             <figure class="cartao">
                 <img class="cartao__imagem" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/46.jpg" alt="Foto do usuário">
@@ -53,7 +98,7 @@
                 </figcaption>
             </figure>
         </li>
-
+        <hr>
         <li class="list-item">
             <figure class="cartao">
                 <img class="cartao__imagem" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/59.jpg" alt="Foto do usuário">
@@ -63,7 +108,7 @@
                 </figcaption>
             </figure>
         </li>
-
+        <hr>
         <li class="list-item">
             <figure class="cartao">
                 <img class="cartao__imagem" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/78.jpg" alt="Foto do usuário">
